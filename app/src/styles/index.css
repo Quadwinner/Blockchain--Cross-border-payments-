@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f9fafb;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.btn {
+  @apply inline-block px-4 py-2 rounded-md font-medium transition-colors duration-200;
+}
+
+.btn-primary {
+  @apply bg-blue-600 text-white hover:bg-blue-700;
+}
+
+.btn-secondary {
+  @apply bg-gray-200 text-gray-800 hover:bg-gray-300;
+}
+
+.input {
+  @apply w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500;
+}
+
+.card {
+  @apply bg-white rounded-lg shadow-md border border-gray-200 p-6;
+}
+
+/* Wallet Adapter Custom Styling */
+.wallet-adapter-button {
+  @apply px-4 py-2 text-sm rounded-md transition-colors duration-200;
+  background-color: #9945FF !important; /* Solana purple */
+  height: auto !important;
+}
+
+.wallet-adapter-button:hover {
+  background-color: #8134e2 !important;
+}
+
+.wallet-adapter-button-trigger {
+  background-color: #9945FF !important;
+}
+
+.wallet-adapter-dropdown-list {
+  @apply shadow-lg bg-white rounded-md border border-gray-200;
+}
+
+.wallet-adapter-dropdown-list-item {
+  @apply text-gray-700 hover:bg-gray-100;
+} 

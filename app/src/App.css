@@ -1,0 +1,59 @@
+/* Base styles for the app */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Container styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.bg-gray-50 {
+  background-color: #F9FAFB;
+}
+
+/* Header/Navbar styles */
+header {
+  display: block;
+  width: 100%;
+  z-index: 10;
+}
+
+/* Fix for potentially hidden navbar */
+header.bg-primary {
+  background-color: #3B82F6 !important; /* Blue-500 */
+}
+
+header.bg-blue-600 {
+  background-color: #2563EB !important; /* Blue-600 */
+}
+
+.text-white {
+  color: #FFFFFF !important;
+}
+
+/* Fix for TailwindCSS classes that might not be applied */
+.flex {
+  display: flex !important;
+}
+
+.justify-between {
+  justify-content: space-between !important;
+}
+
+.items-center {
+  align-items: center !important;
+}
+
+/* Add your additional custom styles here */
